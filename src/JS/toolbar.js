@@ -1,8 +1,8 @@
 import { loadStorage, saveStorage, removeStorage } from './localStorage';
 import buttonColorChange from './changeButtonColor';
 const refs = {
-  toolbarBtn: document.querySelector('.toolbarContainer__Btn'),
-  toolbarBtnLib: document.querySelector('.toolbarContainer__Lib'),
+  // toolbarBtn: document.querySelector('.toolbarContainer__Btn'),
+  // toolbarBtnLib: document.querySelector('.toolbarContainer__Lib'),
 
   // sunSvg: document.querySelector('.toolbarContainer__sun'),
   // sunLibSvg: document.querySelector('.toolbarContainer__sun-lib'),
@@ -22,8 +22,8 @@ const active = 'active-toolbar';
 const SUN = 'Sun';
 const NIGHT = 'Night';
 
-refs.toolbarBtn.addEventListener('click', togle);
-refs.toolbarBtnLib.addEventListener('click', togle);
+// refs.toolbarBtn.addEventListener('click', togle);
+// refs.toolbarBtnLib.addEventListener('click', togle);
 let checkpoint = false;
 if (loadStorage(NIGHT)) {
   togle();
