@@ -8,9 +8,6 @@
 
   &__Btn,
   &__Lib {
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
     margin-left: 6px;
     padding: 0;
     width: 24px;
@@ -36,14 +33,13 @@
   &__moon,
   &__sun-lib,
   &__moon-lib {
-    background-color: #0000;
     height: inherit;
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     z-index: 5;
     @media screen and (min-width: 768px) {
-      width: 30px;
-      height: 30px;
+      width: 28px;
+      height: 28px;
     }
   }
 }
