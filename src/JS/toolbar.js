@@ -1,13 +1,13 @@
 import { loadStorage, saveStorage, removeStorage } from './localStorage';
 import buttonColorChange from './changeButtonColor';
 const refs = {
-  // toolbarBtn: document.querySelector('.toolbarContainer__Btn'),
-  // toolbarBtnLib: document.querySelector('.toolbarContainer__Lib'),
+  toolbarBtn: document.querySelector('.toolbarContainer__Btn'),
+  toolbarBtnLib: document.querySelector('.toolbarContainer__Lib'),
 
-  // sunSvg: document.querySelector('.toolbarContainer__sun'),
-  // sunLibSvg: document.querySelector('.toolbarContainer__sun-lib'),
-  // moonSvg: document.querySelector('.toolbarContainer__moon'),
-  // moonLibSvg: document.querySelector('.toolbarContainer__moon-lib'),
+  sunSvg: document.querySelector('.toolbarContainer__sun'),
+  sunLibSvg: document.querySelector('.toolbarContainer__sun-lib'),
+  moonSvg: document.querySelector('.toolbarContainer__moon'),
+  moonLibSvg: document.querySelector('.toolbarContainer__moon-lib'),
   theme: {
     body: document.querySelector('body'),
     libHeader: document.querySelector('.header-library'),
@@ -22,8 +22,8 @@ const active = 'active-toolbar';
 const SUN = 'Sun';
 const NIGHT = 'Night';
 
-// refs.toolbarBtn.addEventListener('click', togle);
-// refs.toolbarBtnLib.addEventListener('click', togle);
+refs.toolbarBtn.addEventListener('click', togle);
+refs.toolbarBtnLib.addEventListener('click', togle);
 let checkpoint = false;
 if (loadStorage(NIGHT)) {
   togle();
@@ -45,10 +45,10 @@ function togle() {
 function nightTheme() {
   removeStorage(SUN);
 
-  // refs.sunSvg.classList.add(active);
-  // refs.sunLibSvg.classList.add(active);
-  // refs.moonSvg.classList.remove(active);
-  // refs.moonLibSvg.classList.remove(active);
+  refs.sunSvg.classList.add(active);
+  refs.sunLibSvg.classList.add(active);
+  refs.moonSvg.classList.remove(active);
+  refs.moonLibSvg.classList.remove(active);
 
   blurButtons();
 
@@ -69,10 +69,10 @@ function nightTheme() {
 function dayTheme() {
   removeStorage(NIGHT);
 
-  // refs.sunSvg.classList.remove(active);
-  // refs.sunLibSvg.classList.remove(active);
-  // refs.moonSvg.classList.add(active);
-  // refs.moonLibSvg.classList.add(active);
+  refs.sunSvg.classList.remove(active);
+  refs.sunLibSvg.classList.remove(active);
+  refs.moonSvg.classList.add(active);
+  refs.moonLibSvg.classList.add(active);
 
   blurButtons();
 
