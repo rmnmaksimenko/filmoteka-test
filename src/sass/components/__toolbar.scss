@@ -8,16 +8,15 @@
 
   &__Btn,
   &__Lib {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
     width: 24px;
     height: 24px;
     border-radius: 50%;
     border: none;
     background-color: #0000;
     fill: #f6f6f6;
-    color: orange;
   }
 
   @media screen and (min-width: 768px) {
@@ -35,10 +34,13 @@
   &__moon,
   &__sun-lib,
   &__moon-lib {
+    background-color: #0000;
     height: inherit;
-    width: 24px;
+    width: 19px;
+    height: 19px;
     @media screen and (min-width: 768px) {
-      width: 31px;
+      width: 28px;
+      height: 28px;
     }
   }
 }
