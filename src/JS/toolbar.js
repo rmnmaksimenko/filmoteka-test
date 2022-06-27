@@ -106,5 +106,7 @@ function changeTheme(refsList, bool) {
 
 function blurButtons() {
   refs.toolbarBtn.blur();
+  refs.toolbarBtn.inputmode = 'none';
   refs.toolbarBtnLib.blur();
+  refs.toolbarBtnLib.inputmode = 'none';
 }
